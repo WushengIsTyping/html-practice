@@ -45,7 +45,7 @@ THis folder is for html practice.
 
     ```
       <script type="text/javascript">
-          document.write("\<h1>Hello World!</h1>")
+          document.write("<h1>Hello World!</h1>")
       </script>
       <noscript>
           Your browser does not support JavaScript.
@@ -53,6 +53,15 @@ THis folder is for html practice.
     ```
     <p> noscript tag will appear when your browser doesn't support this script language
 12. head can contain title, meta, link, style, script
+    ```
+      <!-- recommend -->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Page Title</title>
+
+      <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    ```
 
 ## Bootstrap
 1. you need to use html5 to ensure bootstrap can work
@@ -61,17 +70,18 @@ THis folder is for html practice.
 4. bootstrap javascript pugins needs jquery, if you want to use them you need to add
     ```
       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
       <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
     ```
+    you'd better add this whatever, cuz many components, for example dropdown menu, needs this support
 
 ## Content of Practices
 P1: simple page with titles, passage, link, start new line, image, table, horrizontal line, comment, list
 P2: common properties, e.g. align, border, name, style, span
 P3: CSS for style, style in header for classes
 P4: layout, id usage
-P5: meta tag, responsive/adaptive (to screen size) design, which is necessary for mobile device
+P5: responsive/adaptive (to screen size) design, which is necessary for mobile device
 P6: Bootstrap
 
 ## Useful Links
