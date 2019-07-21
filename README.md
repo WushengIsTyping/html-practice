@@ -39,9 +39,32 @@ THis folder is for html practice.
      * user-scalable: 用户是否可缩放
    * \<meta http-equiv="X-UA-Compatible" content="IE=edge"> 运行在IE浏览器上时优先用最高模式进行解析渲染
 9.  use bootstrap as much as you can!!
-10. **frame? iframe?**
-11. **script**?
+10. frameset: resizable frames, you can put 3 html files on one page, use \<frame src="practice-1.html" /> \
+    iframe: 把HTML页面作为一个模块插入的感觉，用于在网页内显示网页
+11. script: put in head-->execute when page is loaded, put in body-->execute when it is called
+
+    ```
+      <script type="text/javascript">
+          document.write("\<h1>Hello World!</h1>")
+      </script>
+      <noscript>
+          Your browser does not support JavaScript.
+      </noscript>
+    ```
+    <p> noscript tag will appear when your browser doesn't support this script language
 12. head can contain title, meta, link, style, script
+
+## Bootstrap
+1. you need to use html5 to ensure bootstrap can work
+2. add \<meta name="viewport" content="width=device-width, initial-scale=1.0"> to ensure it works on mobile
+3. find components here: https://v3.bootcss.com/components/
+4. bootstrap javascript pugins needs jquery, if you want to use them you need to add
+    ```
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    ```
 
 ## Content of Practices
 P1: simple page with titles, passage, link, start new line, image, table, horrizontal line, comment, list
@@ -49,9 +72,11 @@ P2: common properties, e.g. align, border, name, style, span
 P3: CSS for style, style in header for classes
 P4: layout, id usage
 P5: meta tag, responsive/adaptive (to screen size) design, which is necessary for mobile device
+P6: Bootstrap
 
 ## Useful Links
 tutorial: http://www.w3school.com.cn/html/index.asp \
 layout: http://www.w3school.com.cn/html/html_responsive.asp \
-script: https://www.cnblogs.com/ddyq/archive/2012/03/06/2382816.html \
-bootstrap: https://www.runoob.com/bootstrap/bootstrap-tutorial.html
+bootstrap: https://www.runoob.com/bootstrap/bootstrap-tutorial.html \
+bootstrap getting started: https://v3.bootcss.com/getting-started/#grunt \
+bootstrap component: https://v3.bootcss.com/components/

@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="author" content="Wusheng">
-        <meta name="keyword" content="Bootstrap">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>bootstrap test</title>
+
+        <link rel="stylesheet" href="D:\VS code\bootstrap-3.3.7-dist\css\bootstrap.min.css">
 
     </head>
 
     <body>
-        <h1>bootstrap practice</h1>
-        <a href="https://www.runoob.com/bootstrap/bootstrap-tutorial.html">tutorial</a>
+        <h1>Hello World! (normal h1)</h1>
+        <div class="jumbotron">
+            <h1>Hello World! (bootstrap jumbotron h1)</h1>
+            <p><a class="btn btn-primary btn-lg " href="https://v3.bootcss.com/components/" role="button">Learn More</a></p>
+        </div>
+
+        <div class="tryIcon">
+            <p>This is an icon. <span class="glyphicon glyphicon-asterisk"></span></p>
+            <p>This is a link. <a href="https://v3.bootcss.com/components"><span class="glyphicon glyphicon-asterisk"></span></a></p>
+            <button type="button" class="btn btn-success">
+                <a href="https://v3.bootcss.com/components/">
+                    This is an icon on a button. <span class="glyphicon glyphicon-asterisk"></span>
+                </a>
+            </button>
+            <a class="btn btn-primary" href="https://v3.bootcss.com/components/">
+                This is another button with a link.<span class="glyphicon glyphicon-asterisk"></span>
+            </a>
+        </div>
+
+        <div class="dropdown">
+            <button type="button" class="btn btn-default dropdown-toggole" id="dropdownMenu1" data-toggle="dropdown"
+             aria-haspopup="true" aria-expanded="true">
+                dropdown menu isn't working ?? <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#">cell 1</a></li>
+                <li><a href="#">cell 2</a></li>
+                <li role="separator" class="divider"></li>
+            </ul>
+        </div>
+
+        <!-- Single button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Action isn't working ?? <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </body>
 </html>
